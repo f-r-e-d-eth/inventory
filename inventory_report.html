@@ -1,0 +1,1246 @@
+
+    <html>
+    <head>
+        <title>Inventory Report</title>
+        <style>
+            body { background-color: black; color: white; font-family: Arial, sans-serif; }
+            h1, h2 { color: white; }
+            table { width: 100%; border-collapse: collapse; margin: 2px 0; }
+            th, td { border: 1px solid white; padding: 8px; text-align: left; }
+            th { background-color: #444; }
+            .green { color: lime; }
+            .yellow { color: yellow; }
+            .red { color: red; }
+            .nested { width: 100%; border-collapse: collapse; border: none; }
+            .nested td, .nested th { border: none; padding: 2px 5px; text-align: left; }
+            .nested th { background-color: #444; padding: 4px 5px; } /* Light grey background for process names */
+            .check { font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <h1>Inventory Report</h1>
+    <h2>Stainless 00</h2><table><tr><th>Component</th><th>Needed</th><th>Available</th><th>Status</th><th>Source</th></tr><tr><td colspan='5'><b>STAINLESS_STEEL</b></td></tr>
+                <tr>
+                    <td>Iron</td>
+                    <td>5100084</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Graphite</td>
+                    <td>601301</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Rhabdite</td>
+                    <td>5167347</td>
+                    <td>1684500</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Oxygen</td>
+                    <td>3384751</td>
+                    <td>1264027</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Deionized Water</td>
+                    <td>965789</td>
+                    <td>531679</td>
+                    <td class='yellow'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Aluminium</td>
+                    <td>168649</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Troilite</td>
+                    <td>9998640</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Sulfuric Acid</td>
+                    <td>9398722</td>
+                    <td>40000</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Carbon Monoxide</td>
+                    <td>379662</td>
+                    <td>648588</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Nickel Oxide</td>
+                    <td>1016950</td>
+                    <td>1924117</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Nickel</td>
+                    <td>800000</td>
+                    <td>2039084</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>NICKEL OXIDE DIRECT REDUCTION</th></tr><tr><td>CARBON MONOXIDE (81%) <span class='check red'>❌</span></td></tr><tr><td>NICKEL OXIDE (241%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Molybdenum Disulfide</td>
+                    <td>499932</td>
+                    <td>162015</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>TROILITE CENTRIFUGAL FROTH FLOTATION</th></tr><tr><td>TROILITE (0%) <span class='check red'>❌</span></td></tr><tr><td>SULFURIC ACID (8%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Molybdenum Trioxide</td>
+                    <td>449938</td>
+                    <td>1770753</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>MOLYBDENUM DISULFIDE ROASTING</th></tr><tr><td>OXYGEN (281%) <span class='check green'>✔</span></td></tr><tr><td>MOLYBDENUM DISULFIDE (36%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Ferromolybdenum</td>
+                    <td>450000</td>
+                    <td>100000</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>MOLYBDENUM TRIOXIDE ALUMINOTHERMIC REDUCTION AND ALLOYING</th></tr><tr><td>IRON (0%) <span class='check red'>❌</span></td></tr><tr><td>MOLYBDENUM TRIOXIDE (394%) <span class='check green'>✔</span></td></tr><tr><td>ALUMINIUM (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Roasted Rhabdite</td>
+                    <td>5663890</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>RHABDITE ROASTING AND ACID EXTRACTION</th></tr><tr><td>RHABDITE (30%) <span class='check red'>❌</span></td></tr><tr><td>OXYGEN (22%) <span class='check red'>❌</span></td></tr><tr><td>DEIONIZED WATER (9%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Ferrochromium</td>
+                    <td>3800000</td>
+                    <td>538287</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>RHABDITE CARBOTHERMIC REDUCTION</th></tr><tr><td>GRAPHITE (0%) <span class='check red'>❌</span></td></tr><tr><td>ROASTED RHABDITE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Stainless Steel</td>
+                    <td>10000000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>STAINLESS STEEL ALLOYING</th></tr><tr><td>IRON (0%) <span class='check red'>❌</span></td></tr><tr><td>NICKEL (20%) <span class='check red'>❌</span></td></tr><tr><td>FERROCHROMIUM (5%) <span class='check red'>❌</span></td></tr><tr><td>FERROMOLYBDENUM (1%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                </table><h2>Alu 01</h2><table><tr><th>Component</th><th>Needed</th><th>Available</th><th>Status</th><th>Source</th></tr><tr><td colspan='5'><b>ALU</b></td></tr>
+                <tr>
+                    <td>Ammonia</td>
+                    <td>158000</td>
+                    <td>100000</td>
+                    <td class='yellow'>❌</td>
+                    <td>import</td>
+                </tr>
+                
+                <tr>
+                    <td>Carbon Dioxide</td>
+                    <td>204000</td>
+                    <td>1503567</td>
+                    <td class='green'>✔</td>
+                    <td>CO...</td>
+                </tr>
+                
+                <tr>
+                    <td>Deionized Water</td>
+                    <td>84000</td>
+                    <td>498</td>
+                    <td class='red'>❌</td>
+                    <td>Unknown</td>
+                </tr>
+                
+                <tr>
+                    <td>Feldspar</td>
+                    <td>5076000</td>
+                    <td>502474</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Graphite</td>
+                    <td>667000</td>
+                    <td>460602</td>
+                    <td class='yellow'>❌</td>
+                    <td>import</td>
+                </tr>
+                
+                <tr>
+                    <td>Hydrofluoric Acid</td>
+                    <td>371000</td>
+                    <td>1660</td>
+                    <td class='red'>❌</td>
+                    <td>import</td>
+                </tr>
+                
+                <tr>
+                    <td>Sulfuric Acid</td>
+                    <td>1815000</td>
+                    <td>156008</td>
+                    <td class='red'>❌</td>
+                    <td>see acids</td>
+                </tr>
+                
+                <tr>
+                    <td>Ammonium Carbonate</td>
+                    <td>444000</td>
+                    <td>99525</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>Ammonia Carbonation</th></tr><tr><td>Ammonia (23%) <span class='check red'>❌</span></td></tr><tr><td>Carbon Dioxide (339%) <span class='check green'>✔</span></td></tr><tr><td>Deionized Water (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Leachedfeldspar</td>
+                    <td>2889000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>Anorthite Feldspar Acid Leaching and Carbonation</th></tr><tr><td>Ammonium Carbonate (3%) <span class='check red'>❌</span></td></tr><tr><td>Feldspar (17%) <span class='check red'>❌</span></td></tr><tr><td>Hydrofluoric Acid (0%) <span class='check red'>❌</span></td></tr><tr><td>Sulfuric Acid (5%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Aluminium</td>
+                    <td>99999000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>Hall–Heroult Process</th></tr><tr><td>Alumina (0%) <span class='check red'>❌</span></td></tr><tr><td>Graphite (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                </table><h2>PowerMod 02</h2><table><tr><th>Component</th><th>Needed</th><th>Available</th><th>Status</th><th>Source</th></tr><tr><td colspan='5'><b>############################_MAKE_POWER_MODULE_###################################</b></td></tr><tr><td colspan='5'><b>POLYPROPYLENE</b></td></tr>
+                <tr>
+                    <td>Deionized Water</td>
+                    <td>1334</td>
+                    <td>263270</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Hydrogen</td>
+                    <td>623</td>
+                    <td>50913</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Bitumen</td>
+                    <td>17780</td>
+                    <td>1242672</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Naphtha</td>
+                    <td>5334</td>
+                    <td>105098</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>BITUMEN HYDRO CRACKING</th></tr><tr><td>HYDROGEN (954%) <span class='check green'>✔</span></td></tr><tr><td>BITUMEN (23297%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Propylene</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>NAPHTHA STEAM CRACKING</th></tr><tr><td>DEIONIZED WATER (26327%) <span class='check green'>✔</span></td></tr><tr><td>NAPHTHA (10510%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Polypropylene</td>
+                    <td>1000</td>
+                    <td>20000</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>PROPYLENE POLYMERIZATION</th></tr><tr><td>PROPYLENE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>COPPER_WIRE</b></td></tr>
+                <tr>
+                    <td>Polypropylene</td>
+                    <td>150</td>
+                    <td>20000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Copper</td>
+                    <td>850</td>
+                    <td>18420</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Bare Copper Wire</td>
+                    <td>850</td>
+                    <td>2006</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>COPPER WIRE DRAWING</th></tr><tr><td>COPPER (2167%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Copper Wire</td>
+                    <td>1000</td>
+                    <td>9739</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>COPPER WIRE INSULATING</th></tr><tr><td>BARE COPPER WIRE (201%) <span class='check green'>✔</span></td></tr><tr><td>POLYPROPYLENE (2000%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>POLYACRYLONITRILE</b></td></tr>
+                <tr>
+                    <td>Sulfur Dioxide</td>
+                    <td>20</td>
+                    <td>90000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Ammonia</td>
+                    <td>470</td>
+                    <td>256864</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Oxygen</td>
+                    <td>1207</td>
+                    <td>935464</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Propylene</td>
+                    <td>1057</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Sulfuric Acid</td>
+                    <td>124</td>
+                    <td>109881</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Acrylonitrile</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>PROPYLENE AMMOXIDATION</th></tr><tr><td>AMMONIA (25686%) <span class='check green'>✔</span></td></tr><tr><td>OXYGEN (93546%) <span class='check green'>✔</span></td></tr><tr><td>PROPYLENE (0%) <span class='check red'>❌</span></td></tr><tr><td>SULFURIC ACID (10988%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Polyacrylonitrile</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>ACRYLONITRILE POLYMERIZATION</th></tr><tr><td>SULFUR DIOXIDE (9000%) <span class='check green'>✔</span></td></tr><tr><td>ACRYLONITRILE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>LIPO_BATTERY</b></td></tr>
+                <tr>
+                    <td>Copper</td>
+                    <td>100</td>
+                    <td>18420</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Polyacrylonitrile</td>
+                    <td>2800</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Aluminium</td>
+                    <td>100</td>
+                    <td>2000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Hydrochloric Acid</td>
+                    <td>10306</td>
+                    <td>5579</td>
+                    <td class='yellow'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Raw Salts</td>
+                    <td>154264</td>
+                    <td>384368</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Lithium Carbonate</td>
+                    <td>10448</td>
+                    <td>270890</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>SALT SELECTIVE CRYSTALLIZATION</th></tr><tr><td>RAW SALTS (3679%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Potassium Chloride</td>
+                    <td>21429</td>
+                    <td>675694</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>SALT SELECTIVE CRYSTALLIZATION</th></tr><tr><td>RAW SALTS (1794%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Lithium Chloride</td>
+                    <td>12000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>LITHIUM CARBONATE CHLORINATION</th></tr><tr><td>LITHIUM CARBONATE (2257%) <span class='check green'>✔</span></td></tr><tr><td>HYDROCHLORIC ACID (46%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Lithium</td>
+                    <td>2000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>LITHIUM CHLORIDE MOLTEN SALT ELECTROLYSIS</th></tr><tr><td>POTASSIUM CHLORIDE (33785%) <span class='check green'>✔</span></td></tr><tr><td>LITHIUM CHLORIDE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Lipo Battery</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>LIPO BATTERY ASSEMBLY</th></tr><tr><td>COPPER (1842%) <span class='check green'>✔</span></td></tr><tr><td>POLYACRYLONITRILE (0%) <span class='check red'>❌</span></td></tr><tr><td>ALUMINIUM (200%) <span class='check green'>✔</span></td></tr><tr><td>LITHIUM (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>COPPER</b></td></tr>
+                <tr>
+                    <td>Taenite</td>
+                    <td>20000</td>
+                    <td>224891</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Copper</td>
+                    <td>1000</td>
+                    <td>18420</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>TAENITE ELECTROLYTIC REFINING</th></tr><tr><td>TAENITE (22489%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>SILVER</b></td></tr>
+                <tr>
+                    <td>Carbon Monoxide</td>
+                    <td>14399</td>
+                    <td>55049</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Oxygen</td>
+                    <td>23273</td>
+                    <td>935464</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Troilite</td>
+                    <td>1450150</td>
+                    <td>1584130</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Sulfuric Acid</td>
+                    <td>1426306</td>
+                    <td>109881</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Carbon Dioxide</td>
+                    <td>28342</td>
+                    <td>1000000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Olivine</td>
+                    <td>66258</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Weathered Olivine</td>
+                    <td>75246</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>OLIVINE ENHANCED WEATHERING</th></tr><tr><td>CARBON DIOXIDE (1329%) <span class='check green'>✔</span></td></tr><tr><td>OLIVINE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Zinc Oxide</td>
+                    <td>2381</td>
+                    <td>4977490</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>OLIVINE ACID LEACHING AND CALCINING</th></tr><tr><td>SULFURIC ACID (4615%) <span class='check green'>✔</span></td></tr><tr><td>WEATHERED OLIVINE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Zinc</td>
+                    <td>1910</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>ZINC OXIDE DIRECT REDUCTION</th></tr><tr><td>CARBON MONOXIDE (2882%) <span class='check green'>✔</span></td></tr><tr><td>ZINC OXIDE (260602%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Lead Sulfide</td>
+                    <td>116012</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>TROILITE CENTRIFUGAL FROTH FLOTATION</th></tr><tr><td>TROILITE (1365%) <span class='check green'>✔</span></td></tr><tr><td>SULFURIC ACID (95%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Lead</td>
+                    <td>101506</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>LEAD SULFIDE SMELTING</th></tr><tr><td>CARBON MONOXIDE (54%) <span class='check red'>❌</span></td></tr><tr><td>OXYGEN (922%) <span class='check green'>✔</span></td></tr><tr><td>LEAD SULFIDE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Silver</td>
+                    <td>1000</td>
+                    <td>968</td>
+                    <td class='yellow'>❌</td>
+                    <td><table class='nested'><tr><th>PARKES PROCESS</th></tr><tr><td>ZINC (0%) <span class='check red'>❌</span></td></tr><tr><td>LEAD (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>TIN</b></td></tr>
+                <tr>
+                    <td>Carbon Monoxide</td>
+                    <td>236</td>
+                    <td>55049</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Calcite</td>
+                    <td>26</td>
+                    <td>50000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Oxygen</td>
+                    <td>454</td>
+                    <td>935464</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Troilite</td>
+                    <td>56750</td>
+                    <td>1584130</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Sulfuric Acid</td>
+                    <td>53345</td>
+                    <td>109881</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Tin Sulfide</td>
+                    <td>1135</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>TROILITE CENTRIFUGAL FROTH FLOTATION</th></tr><tr><td>TROILITE (139571%) <span class='check green'>✔</span></td></tr><tr><td>SULFURIC ACID (9681%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Tin</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>TIN SULFIDE SMELTING</th></tr><tr><td>CARBON MONOXIDE (5505%) <span class='check green'>✔</span></td></tr><tr><td>CALCITE (5000%) <span class='check green'>✔</span></td></tr><tr><td>OXYGEN (93546%) <span class='check green'>✔</span></td></tr><tr><td>TIN SULFIDE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>SOLDER</b></td></tr>
+                <tr>
+                    <td>Copper</td>
+                    <td>7</td>
+                    <td>18420</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Silver</td>
+                    <td>40</td>
+                    <td>968</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Tin</td>
+                    <td>954</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Solder</td>
+                    <td>1000</td>
+                    <td>783</td>
+                    <td class='yellow'>❌</td>
+                    <td><table class='nested'><tr><th>SOLDER MANUFACTURING</th></tr><tr><td>COPPER (1842%) <span class='check green'>✔</span></td></tr><tr><td>SILVER (97%) <span class='check red'>❌</span></td></tr><tr><td>TIN (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>DIODE</b></td></tr>
+                <tr>
+                    <td>Polypropylene</td>
+                    <td>167</td>
+                    <td>20000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Phosphoric Acid</td>
+                    <td>1</td>
+                    <td>300903</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Graphite</td>
+                    <td>1192</td>
+                    <td>1000000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Silica</td>
+                    <td>2979</td>
+                    <td>611027</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Deionized Water</td>
+                    <td>2</td>
+                    <td>263270</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Hydrochloric Acid</td>
+                    <td>1</td>
+                    <td>5579</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Raw Salts</td>
+                    <td>150</td>
+                    <td>384368</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Borax</td>
+                    <td>3</td>
+                    <td>41674</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>SALT SELECTIVE CRYSTALLIZATION</th></tr><tr><td>RAW SALTS (12812267%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Boric Acid</td>
+                    <td>3</td>
+                    <td>998</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>BORAX ACID EXTRACTION</th></tr><tr><td>DEIONIZED WATER (8775667%) <span class='check green'>✔</span></td></tr><tr><td>BORAX (1389133%) <span class='check green'>✔</span></td></tr><tr><td>HYDROCHLORIC ACID (185967%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Silicon</td>
+                    <td>1390</td>
+                    <td>19880</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>SILICA CARBOTHERMIC REDUCTION</th></tr><tr><td>GRAPHITE (71942%) <span class='check green'>✔</span></td></tr><tr><td>SILICA (43959%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Silicon Wafer</td>
+                    <td>834</td>
+                    <td>950</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>SILICON CZOCHRALSKI PROCESS AND WAFER SLICING</th></tr><tr><td>SILICON (2384%) <span class='check green'>✔</span></td></tr><tr><td>PHOSPHORIC ACID (36079%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Diode</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>DIODE DOPING AND ASSEMBLY</th></tr><tr><td>POLYPROPYLENE (2000%) <span class='check green'>✔</span></td></tr><tr><td>BORIC ACID (100%) <span class='check green'>✔</span></td></tr><tr><td>SILICON WAFER (95%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>FERRITE</b></td></tr>
+                <tr>
+                    <td>Oxygen</td>
+                    <td>23</td>
+                    <td>935464</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Sulfuric Acid</td>
+                    <td>13673</td>
+                    <td>109881</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Weathered Olivine</td>
+                    <td>16289</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Zinc Oxide</td>
+                    <td>172</td>
+                    <td>4977490</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>OLIVINE ACID LEACHING AND CALCINING</th></tr><tr><td>SULFURIC ACID (63884%) <span class='check green'>✔</span></td></tr><tr><td>WEATHERED OLIVINE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Nickel Oxide</td>
+                    <td>158</td>
+                    <td>1029533</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>OLIVINE ACID LEACHING AND CALCINING</th></tr><tr><td>SULFURIC ACID (69545%) <span class='check green'>✔</span></td></tr><tr><td>WEATHERED OLIVINE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Iron Oxide</td>
+                    <td>650</td>
+                    <td>50000</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>OLIVINE ACID LEACHING AND CALCINING</th></tr><tr><td>SULFURIC ACID (16905%) <span class='check green'>✔</span></td></tr><tr><td>WEATHERED OLIVINE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Ferrite</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>FERRITE SINTERING</th></tr><tr><td>OXYGEN (93546%) <span class='check green'>✔</span></td></tr><tr><td>IRON OXIDE (5000%) <span class='check green'>✔</span></td></tr><tr><td>ZINC OXIDE (497749%) <span class='check green'>✔</span></td></tr><tr><td>NICKEL OXIDE (102953%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>EPOXY</b></td></tr>
+                <tr>
+                    <td>Sodium Hydroxide</td>
+                    <td>1150</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Bisphenol A</td>
+                    <td>1460</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Polypropylene</td>
+                    <td>402</td>
+                    <td>20000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Calcium Chloride</td>
+                    <td>2125</td>
+                    <td>104188</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Chlorine</td>
+                    <td>1359</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>CALCIUM CHLORIDE MOLTEN SALT ELECTROLYSIS</th></tr><tr><td>CALCIUM CHLORIDE (7667%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Epichlorohydrin</td>
+                    <td>890</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>POLYPROPYLENE CHLORINATION AND BASIFICATION</th></tr><tr><td>POLYPROPYLENE (2247%) <span class='check green'>✔</span></td></tr><tr><td>CHLORINE (0%) <span class='check red'>❌</span></td></tr><tr><td>SODIUM HYDROXIDE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Diepoxy Prepolymer Resin</td>
+                    <td>2000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>DIEPOXY STEP GROWTH POLYMERIZATION</th></tr><tr><td>SODIUM HYDROXIDE (0%) <span class='check red'>❌</span></td></tr><tr><td>EPICHLOROHYDRIN (0%) <span class='check red'>❌</span></td></tr><tr><td>BISPHENOL A (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Epoxy</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>EPOXY STOICHIOMETRY AND PACKAGING</th></tr><tr><td>DIEPOXY PREPOLYMER RESIN (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>TANTALUM</b></td></tr>
+                <tr>
+                    <td>Sodium Chloride</td>
+                    <td>1614</td>
+                    <td>1256087</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Hydrofluoric Acid</td>
+                    <td>1935</td>
+                    <td>1000</td>
+                    <td class='yellow'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Rhabdite Slag</td>
+                    <td>4062</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Carbon Dioxide</td>
+                    <td>1239</td>
+                    <td>1000000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Deionized Water</td>
+                    <td>157</td>
+                    <td>263270</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Potassium Chloride</td>
+                    <td>648</td>
+                    <td>675694</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Potassium Hydroxide</td>
+                    <td>487</td>
+                    <td>92929</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>POTASSIUM CHLORALKALI PROCESS</th></tr><tr><td>DEIONIZED WATER (54060%) <span class='check green'>✔</span></td></tr><tr><td>POTASSIUM CHLORIDE (138746%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Potassium Carbonate</td>
+                    <td>1526</td>
+                    <td>22119</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>POTASSIUM HYDROXIDE CARBONATION</th></tr><tr><td>CARBON DIOXIDE (65531%) <span class='check green'>✔</span></td></tr><tr><td>POTASSIUM HYDROXIDE (6090%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Hydrogen Heptafluorotantalate And Niobate</td>
+                    <td>3006</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>RHABDITE SLAG ACID LEACHING</th></tr><tr><td>HYDROFLUORIC ACID (33%) <span class='check red'>❌</span></td></tr><tr><td>RHABDITE SLAG (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Potassium Fluoride</td>
+                    <td>1282</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>POTASSIUM CARBONATE OXIDATION</th></tr><tr><td>HYDROFLUORIC ACID (78%) <span class='check red'>❌</span></td></tr><tr><td>POTASSIUM CARBONATE (1725%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Potassium Heptafluorotantalate</td>
+                    <td>2166</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>TANTALATE NIOBATE LIQUID LIQUID EXTRACTION AND REDOX</th></tr><tr><td>HYDROGEN HEPTAFLUOROTANTALATE AND NIOBATE (0%) <span class='check red'>❌</span></td></tr><tr><td>POTASSIUM FLUORIDE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Tantalum</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>POTASSIUM HEPTAFLUOROTANTALATE SODIOTHERMIC REDUCTION</th></tr><tr><td>SODIUM CHLORIDE (125609%) <span class='check green'>✔</span></td></tr><tr><td>POTASSIUM HEPTAFLUOROTANTALATE (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>SURFACE_MOUNT_DEVICE_REEL</b></td></tr>
+                <tr>
+                    <td>Diode</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Copper Wire</td>
+                    <td>200</td>
+                    <td>9739</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Ferrite</td>
+                    <td>1600</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Epoxy</td>
+                    <td>300</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Graphite</td>
+                    <td>1</td>
+                    <td>1000000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Sulfuric Acid</td>
+                    <td>290</td>
+                    <td>109881</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Silver</td>
+                    <td>2</td>
+                    <td>968</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Tantalum</td>
+                    <td>800</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Pedot</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Polypropylene</td>
+                    <td>167</td>
+                    <td>20000</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Nichrome</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Alumina</td>
+                    <td>834</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Alumina Ceramic</td>
+                    <td>834</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>ALUMINA FORMING AND SINTERING</th></tr><tr><td>ALUMINA (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Thin Film Resistor</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>THIN FILM RESISTOR SPUTTERING AND LASER TRIMMING</th></tr><tr><td>POLYPROPYLENE (2000%) <span class='check green'>✔</span></td></tr><tr><td>ALUMINA CERAMIC (0%) <span class='check red'>❌</span></td></tr><tr><td>NICHROME (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Polymer Tantalum Capacitor</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>POLYMER TANTALUM CAPACITOR ASSEMBLY</th></tr><tr><td>GRAPHITE (100000%) <span class='check green'>✔</span></td></tr><tr><td>SULFURIC ACID (10988%) <span class='check green'>✔</span></td></tr><tr><td>SILVER (97%) <span class='check red'>❌</span></td></tr><tr><td>EPOXY (0%) <span class='check red'>❌</span></td></tr><tr><td>TANTALUM (0%) <span class='check red'>❌</span></td></tr><tr><td>PEDOT (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Ferrite Bead Inductor</td>
+                    <td>2000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>FERRITE BEAD INDUCTOR WINDING</th></tr><tr><td>COPPER WIRE (487%) <span class='check green'>✔</span></td></tr><tr><td>FERRITE (0%) <span class='check red'>❌</span></td></tr><tr><td>EPOXY (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Surface Mount Device Reel</td>
+                    <td>1000</td>
+                    <td>80</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>SURFACE MOUNT DEVICE REEL ASSEMBLY</th></tr><tr><td>DIODE (0%) <span class='check red'>❌</span></td></tr><tr><td>FERRITE BEAD INDUCTOR (0%) <span class='check red'>❌</span></td></tr><tr><td>THIN FILM RESISTOR (0%) <span class='check red'>❌</span></td></tr><tr><td>POLYMER TANTALUM CAPACITOR (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>CIRCUIT_BOARD</b></td></tr>
+                <tr>
+                    <td>Solder</td>
+                    <td>400</td>
+                    <td>783</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Surface Mount Device Reel</td>
+                    <td>100</td>
+                    <td>80</td>
+                    <td class='yellow'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Copper</td>
+                    <td>50</td>
+                    <td>18420</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Gold</td>
+                    <td>3</td>
+                    <td>13</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Epoxy</td>
+                    <td>178</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Silica</td>
+                    <td>270</td>
+                    <td>611027</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Fiberglass</td>
+                    <td>270</td>
+                    <td>46373</td>
+                    <td class='green'>✔</td>
+                    <td><table class='nested'><tr><th>SILICA PULTRUSION</th></tr><tr><td>SILICA (226306%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Bare Circuit Board</td>
+                    <td>500</td>
+                    <td>2</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>BOARD PRINTING</th></tr><tr><td>COPPER (3684%) <span class='check green'>✔</span></td></tr><tr><td>FIBERGLASS (9275%) <span class='check green'>✔</span></td></tr><tr><td>GOLD (3%) <span class='check red'>❌</span></td></tr><tr><td>EPOXY (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Circuit Board</td>
+                    <td>1000</td>
+                    <td>307</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>PICK AND PLACE BOARD POPULATION</th></tr><tr><td>SOLDER (78%) <span class='check red'>❌</span></td></tr><tr><td>BARE CIRCUIT BOARD (0%) <span class='check red'>❌</span></td></tr><tr><td>SURFACE MOUNT DEVICE REEL (8%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                <tr><td colspan='5'><b>POWER_MODULE</b></td></tr>
+                <tr>
+                    <td>Solder</td>
+                    <td>80</td>
+                    <td>783</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Copper Wire</td>
+                    <td>2400</td>
+                    <td>9739</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Lipo Battery</td>
+                    <td>11700</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Circuit Board</td>
+                    <td>20</td>
+                    <td>307</td>
+                    <td class='green'>✔</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Silicon Wafer</td>
+                    <td>4000</td>
+                    <td>950</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Aluminium Sheet</td>
+                    <td>2000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Borosilicate Glass</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>Photovoltaic Panel</td>
+                    <td>5000</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>PHOTOVOLTAIC PANEL AMORPHIZATION AND ASSEMBLY</th></tr><tr><td>COPPER WIRE (195%) <span class='check green'>✔</span></td></tr><tr><td>SILICON WAFER (19%) <span class='check red'>❌</span></td></tr><tr><td>ALUMINIUM SHEET (0%) <span class='check red'>❌</span></td></tr><tr><td>BOROSILICATE GLASS (0%) <span class='check red'>❌</span></td></tr></table></td>
+                </tr>
+                
+                <tr>
+                    <td>Power Module</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td class='red'>❌</td>
+                    <td><table class='nested'><tr><th>POWER MODULE ASSEMBLY</th></tr><tr><td>SOLDER (783%) <span class='check green'>✔</span></td></tr><tr><td>COPPER WIRE (9739%) <span class='check green'>✔</span></td></tr><tr><td>PHOTOVOLTAIC PANEL (0%) <span class='check red'>❌</span></td></tr><tr><td>LIPO BATTERY (0%) <span class='check red'>❌</span></td></tr><tr><td>CIRCUIT BOARD (307%) <span class='check green'>✔</span></td></tr></table></td>
+                </tr>
+                </table></body></html>

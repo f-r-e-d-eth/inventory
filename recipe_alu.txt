@@ -1,0 +1,12 @@
+#product Alu
+Ammonia,158000,import
+Carbon Dioxide,204000,CO...
+Deionized Water,84000
+Feldspar,5076000,
+Graphite,667000,import
+Hydrofluoric Acid,371000,import
+Sulfuric Acid,1815000,see acids
+Ammonium Carbonate,444000,Ammonia Carbonation//Ammonia/Carbon Dioxide/Deionized Water
+LeachedFeldspar,2889000,Anorthite Feldspar Acid Leaching and Carbonation//Ammonium Carbonate/Feldspar/Hydrofluoric Acid/Sulfuric Acid
+Aluminium,99999000,Hall–Heroult Process//Alumina/Graphite
+
